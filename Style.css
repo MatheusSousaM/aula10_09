@@ -1,0 +1,152 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.cabecalho {
+    height: 50px;
+    background-color: rgb(166, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.cabecalho a {
+    color:  rgb(12, 7, 7);
+    font-size: 30px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.sessao1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1 {
+    height: 200px;
+    background-color: red;
+    width: 33.33%;
+    
+    
+   
+}
+img{
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+    margin-left: 20%;
+
+   
+}
+
+
+.div2 {
+    height: 200px;
+    background-color: blue;
+    width: 33.33%;
+    
+}
+
+
+.div3 {
+    height: 200px;
+    background-color: black;
+    width: 33.33%;
+}
+
+.sessao2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div4 {
+    height: 200px;
+    background-color: green;
+    width: 25%;
+}
+
+.div5 {
+    height: 200px;
+    background-color: grey;
+    width: 25%;
+}
+
+.div6 {
+    height: 200px;
+    background-color: purple;
+    width: 25%;
+}
+
+.div7 {
+    height: 200px;
+    background-color: yellowgreen;
+    width: 25%;
+}
+
+.rodape {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rodape a, p {
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+/*Responsividade*/
+/*Responsividade*/
+/*Responsividade*/
+
+@media(max-width:768px){
+    .sessao1{
+        flex-wrap: wrap;
+    }
+
+    .div1{
+        background-color: chartreuse;
+    }
+        .div1,.div2{
+            width: 50%;
+        }
+        .div3{
+            width: 100%;
+    }
+        .sessao2{
+            flex-wrap: wrap;
+        }
+        .div4,.div5,.div6,.div7{
+            width: 50%;
+        }
+} 
+
+@media (max-width: 420px){
+    .cabecalho{
+        flex-direction: column;
+        height: 100%;
+    }
+    .cabecalho a{
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+    }
+    
+    
+    .sessao1,.sessao2{
+        flex-direction: column;
+    }
+    .div1,.div2,.div3,.div4,.div5,.div6,.div7{
+        width: 100%;
+    }
+}
